@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Okc_API_Automation">
+    <test name="ApiChaining">
+        <classes>
+            <class name="day7.ApiChaining"/>
+        </classes>
+    </test>
+    <test name="getuser">
+        <classes>
+            <class name="day7.getUser"/>
+        </classes>
+    </test>
+    <test name="Updateuser">
+        <classes>
+            <class name="day7.UpdateUser"/>
+        </classes>
+    </test>
+    <test name="deleteUser">
+        <classes>
+            <class name="day7.DeleteUser"/>
+        </classes>
+    </test>
+    <test name="storeApi">
+        <classes>
+            <class name="storeApi.GetInventory"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
