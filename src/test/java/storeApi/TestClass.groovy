@@ -1,4 +1,0 @@
-package storeApi
-
-class TestClass {
-}
