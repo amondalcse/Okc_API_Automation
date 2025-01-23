@@ -1,10 +1,10 @@
 package api.tests;
 
 import api.endpoints.UserEndPoints;
+import api.endpoints.UserEndPoints2;
 import api.payloads.User;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class UserTests
+public class UserTests2
 {
     Faker faker;
     User userPayload;
@@ -36,7 +36,7 @@ public class UserTests
     public void testCreateUser()
     {
         logger.info("***************User Create api*****************");
-        Response response = UserEndPoints.createUser(userPayload);
+        Response response = UserEndPoints2.createUser(userPayload);
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(),200);
         logger.info("***************User successfully Created*****************");
@@ -46,7 +46,7 @@ public class UserTests
     @Test(priority = 2)
     public void getUserByUserName(){
         logger.info("***************get User based on username*****************");
-        Response response  = UserEndPoints.getUser(this.userPayload.getUsername());
+        Response response  = UserEndPoints2.getUser(this.userPayload.getUsername());
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(),200);
         logger.info("***************successfully fetch the user*****************");
@@ -54,12 +54,14 @@ public class UserTests
     @Test(priority = 3)
     public void updateUserByUserName()
     {
+        logger.debug("updating user user");
         //update the data based on your test cases
         userPayload.setFirstName(faker.name().firstName());
         userPayload.setLastName(faker.name().lastName());
         userPayload.setEmail(faker.internet().safeEmailAddress());
 
-        Response response = UserEndPoints.updateUser(this.userPayload.getUsername(),userPayload);
+        logger.debug("get the updated user ");
+        Response response = UserEndPoints2.updateUser(this.userPayload.getUsername(),userPayload);
         response.then().log().all();
         response.then().log().body().statusCode(200);
         Assert.assertEquals(response.getStatusCode(),200);
@@ -67,7 +69,7 @@ public class UserTests
 
         //checking data after updation
 
-        Response responseAfterUpdation  = UserEndPoints.getUser(this.userPayload.getUsername());
+        Response responseAfterUpdation  = UserEndPoints2.getUser(this.userPayload.getUsername());
         response.then().log().all();
         Assert.assertEquals(responseAfterUpdation.getStatusCode(),200);
 
@@ -75,7 +77,7 @@ public class UserTests
 
     @Test(priority = 4)
     public void deleteUser(){
-        Response response = UserEndPoints.deleteUser(this.userPayload.getUsername());
+        Response response = UserEndPoints2.deleteUser(this.userPayload.getUsername());
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(),200);
     }

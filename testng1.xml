@@ -24,6 +24,8 @@
     <test name="storeApi">
         <classes>
             <class name="storeApi.GetInventory"/>
+            <class name="storeApi.Users"/>
         </classes>
     </test>
+
 </suite> <!-- Suite -->

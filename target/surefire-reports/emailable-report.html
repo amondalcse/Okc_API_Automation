@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,275</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.tests.DDTests</td><td><a href="#m0">deleteUserByUsername</a></td><td rowspan="1">1737594236606</td><td rowspan="1">1454</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">api.tests.DDTests</td><td><a href="#m1">deleteUserByUsername</a></td><td rowspan="2">1737594238062</td><td rowspan="2">1424</td></tr><tr class="passedeven"><td><a href="#m2">deleteUserByUsername</a></td></tr><tr class="passedeven"><td><a href="#m3">testPostUser</a></td><td rowspan="3">1737594232478</td><td rowspan="3">1274</td></tr><tr class="passedeven"><td><a href="#m4">testPostUser</a></td></tr><tr class="passedeven"><td><a href="#m5">testPostUser</a></td></tr><tr class="passedodd"><td rowspan="4">api.tests.UserTests</td><td><a href="#m6">deleteUser</a></td><td rowspan="1">1737594230579</td><td rowspan="1">1361</td></tr><tr class="passedodd"><td><a href="#m7">getUserByUserName</a></td><td rowspan="1">1737594226617</td><td rowspan="1">1301</td></tr><tr class="passedodd"><td><a href="#m8">testCreateUser</a></td><td rowspan="1">1737594224081</td><td rowspan="1">2534</td></tr><tr class="passedodd"><td><a href="#m9">updateUserByUserName</a></td><td rowspan="1">1737594227919</td><td rowspan="1">2659</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">api.tests.DDTests#deleteUserByUsername</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>abhijit</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [404]
+	at api.tests.DDTests.deleteUserByUsername(DDTests.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.tests.DDTests#deleteUserByUsername</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>abhijit1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.tests.DDTests#deleteUserByUsername</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>abhijit2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.tests.DDTests#testPostUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1</td><td>abhijit</td><td>Abhijit</td><td>Test</td><td>123@test.com</td><td>Abhijit@123</td><td>5555555501</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">api.tests.DDTests#testPostUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>3</td><td>abhijit2</td><td>Surat</td><td>dump</td><td>dump@test.com</td><td>Surat@123</td><td>5555555503</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">api.tests.DDTests#testPostUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>2</td><td>abhijit1</td><td>Suman</td><td>dol</td><td>dol@test.com</td><td>Suman!123</td><td>5555555502</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">api.tests.UserTests#deleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">api.tests.UserTests#getUserByUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">api.tests.UserTests#testCreateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">api.tests.UserTests#updateUserByUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
