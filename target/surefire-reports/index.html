@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="api.tests.DDTests" class="method navigator-link" hash-for-method="deleteUserByUsername(abhijit)">deleteUserByUsername(abhijit)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -132,6 +118,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.tests.DDTests" class="method navigator-link" hash-for-method="deleteUserByUsername(abhijit)">deleteUserByUsername(abhijit)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="api.tests.UserTests" class="method navigator-link" hash-for-method="getUserByUserName">getUserByUserName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -142,17 +133,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.tests.DDTests" class="method navigator-link" hash-for-method="testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502)">testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="api.tests.DDTests" class="method navigator-link" hash-for-method="testPostUser(1, abhijit, Abhijit, Test, 123@test.com, Abhijit@123, 5555555501)">testPostUser(1, abhijit, Abhijit, Test, 123@test.com, Abhijit@123, 5555555501)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="api.tests.DDTests" class="method navigator-link" hash-for-method="testPostUser(3, abhijit2, Surat, dump, dump@test.com, Surat@123, 5555555503)">testPostUser(3, abhijit2, Surat, dump, dump@test.com, Surat@123, 5555555503)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="api.tests.DDTests" class="method navigator-link" hash-for-method="testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502)">testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,27 +163,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">api.tests.DDTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteUserByUsername(abhijit)">
-                  </a> <!-- deleteUserByUsername(abhijit) -->
-                  <span class="method-name">deleteUserByUsername</span>
-                  <span class="parameters">(abhijit)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at api.tests.DDTests.deleteUserByUsername(DDTests.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -217,6 +187,22 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="deleteUserByUsername(abhijit)">
+                  </a> <!-- deleteUserByUsername(abhijit) -->
+                  <span class="method-name">deleteUserByUsername</span>
+                  <span class="parameters">(abhijit)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502)">
+                  </a> <!-- testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502) -->
+                  <span class="method-name">testPostUser</span>
+                  <span class="parameters">(2,abhijit1,Suman,dol,dol@test.com,Suman!123,5555555502)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testPostUser(1, abhijit, Abhijit, Test, 123@test.com, Abhijit@123, 5555555501)">
                   </a> <!-- testPostUser(1, abhijit, Abhijit, Test, 123@test.com, Abhijit@123, 5555555501) -->
                   <span class="method-name">testPostUser</span>
@@ -229,14 +215,6 @@
                   </a> <!-- testPostUser(3, abhijit2, Surat, dump, dump@test.com, Surat@123, 5555555503) -->
                   <span class="method-name">testPostUser</span>
                   <span class="parameters">(3,abhijit2,Surat,dump,dump@test.com,Surat@123,5555555503)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502)">
-                  </a> <!-- testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502) -->
-                  <span class="method-name">testPostUser</span>
-                  <span class="parameters">(2,abhijit1,Suman,dol,dol@test.com,Suman!123,5555555502)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -333,48 +311,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'updateUserByUserName')
 data.setCell(0, 2, 'api.tests.UserTests')
-data.setCell(0, 3, 2659);
+data.setCell(0, 3, 2613);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCreateUser')
 data.setCell(1, 2, 'api.tests.UserTests')
-data.setCell(1, 3, 2534);
+data.setCell(1, 3, 2536);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testPostUser')
-data.setCell(2, 2, 'api.tests.DDTests')
-data.setCell(2, 3, 1534);
+data.setCell(2, 1, 'getUserByUserName')
+data.setCell(2, 2, 'api.tests.UserTests')
+data.setCell(2, 3, 1421);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'deleteUserByUsername')
 data.setCell(3, 2, 'api.tests.DDTests')
-data.setCell(3, 3, 1454);
+data.setCell(3, 3, 1358);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'deleteUserByUsername')
+data.setCell(4, 1, 'testPostUser')
 data.setCell(4, 2, 'api.tests.DDTests')
-data.setCell(4, 3, 1424);
+data.setCell(4, 3, 1313);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'deleteUser')
-data.setCell(5, 2, 'api.tests.UserTests')
-data.setCell(5, 3, 1361);
+data.setCell(5, 1, 'deleteUserByUsername')
+data.setCell(5, 2, 'api.tests.DDTests')
+data.setCell(5, 3, 1300);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'deleteUserByUsername')
+data.setCell(6, 1, 'testPostUser')
 data.setCell(6, 2, 'api.tests.DDTests')
-data.setCell(6, 3, 1342);
+data.setCell(6, 3, 1285);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getUserByUserName')
+data.setCell(7, 1, 'deleteUser')
 data.setCell(7, 2, 'api.tests.UserTests')
-data.setCell(7, 3, 1301);
+data.setCell(7, 3, 1274);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testPostUser')
+data.setCell(8, 1, 'deleteUserByUsername')
 data.setCell(8, 2, 'api.tests.DDTests')
-data.setCell(8, 3, 1284);
+data.setCell(8, 3, 1219);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'testPostUser')
 data.setCell(9, 2, 'api.tests.DDTests')
-data.setCell(9, 3, 1274);
+data.setCell(9, 3, 1175);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -407,48 +385,46 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testCreateUser</span>
-                <span class="method-start">514 ms</span>
+                <span class="method-start">513 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserByUserName</span>
-                <span class="method-start">3050 ms</span>
+                <span class="method-start">3051 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateUserByUserName</span>
-                <span class="method-start">4352 ms</span>
+                <span class="method-start">4473 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteUser</span>
-                <span class="method-start">7012 ms</span>
+                <span class="method-start">7087 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">api.tests.DDTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testPostUser(1, abhijit, Abhijit, Test, 123@test.com, Abhijit@123, 5555555501)</span>
-                <span class="method-start">8911 ms</span>
+                <span class="method-start">8994 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPostUser(2, abhijit1, Suman, dol, dol@test.com, Suman!123, 5555555502)</span>
-                <span class="method-start">10186 ms</span>
+                <span class="method-start">10308 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPostUser(3, abhijit2, Surat, dump, dump@test.com, Surat@123, 5555555503)</span>
-                <span class="method-start">11721 ms</span>
+                <span class="method-start">11594 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">deleteUserByUsername(abhijit)</span>
-                <span class="method-start">13039 ms</span>
+                <span class="method-start">12804 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteUserByUsername(abhijit1)</span>
-                <span class="method-start">14495 ms</span>
+                <span class="method-start">14024 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteUserByUsername(abhijit2)</span>
-                <span class="method-start">15920 ms</span>
+                <span class="method-start">15325 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
