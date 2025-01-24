@@ -12,7 +12,8 @@
             <!--<class name="day7.UpdateUser"/>-->
             <!--<class name="day7.DeleteUser"/>-->
             <!--<class name="api.tests.DDTests"/>-->
-            <class name="api.tests.UserTests2"/>
+            <!--<class name="api.tests.UserTests2"/>-->
+            <class name="api.tests.ReqresUserTest"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

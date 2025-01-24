@@ -277,3 +277,15 @@
 21:21:15.753 [main] INFO  api.tests.UserTests2 - ***************successfully fetch the user*****************
 21:21:15.754 [main] DEBUG api.tests.UserTests2 - updating user user
 21:21:15.756 [main] DEBUG api.tests.UserTests2 - get the updated user 
+19:30:37.683 [main] INFO  api.tests.UserTests2 - ***************User Create api*****************
+19:30:40.159 [main] INFO  api.tests.UserTests2 - ***************User successfully Created*****************
+19:30:40.166 [main] INFO  api.tests.UserTests2 - ***************get User based on username*****************
+19:30:41.616 [main] INFO  api.tests.UserTests2 - ***************successfully fetch the user*****************
+19:30:41.617 [main] DEBUG api.tests.UserTests2 - updating user user
+19:30:41.618 [main] DEBUG api.tests.UserTests2 - get the updated user 
+20:13:04.749 [main] INFO  api.tests.UserTests2 - ***************User Create api*****************
+20:13:07.218 [main] INFO  api.tests.UserTests2 - ***************User successfully Created*****************
+20:13:07.227 [main] INFO  api.tests.UserTests2 - ***************get User based on username*****************
+20:13:08.477 [main] INFO  api.tests.UserTests2 - ***************successfully fetch the user*****************
+20:13:08.479 [main] DEBUG api.tests.UserTests2 - updating user user
+20:13:08.479 [main] DEBUG api.tests.UserTests2 - get the updated user 
